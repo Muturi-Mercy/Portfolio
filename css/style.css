@@ -1,0 +1,565 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: white;
+    overflow-x:hidden ;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Hero */
+.hero{
+    margin-bottom: 0;
+}
+.hero .container{
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+.hero .container .bg-video{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video cover the full width of the viewport */
+    height: 100%; /* Make the video cover the full height of the viewport */
+    object-fit: cover; /* Ensures the video covers the entire viewport */
+    z-index: -1; /* Puts the video behind the content */
+}
+.hero .hero-content{
+    height: 100%;
+    border:1px solid white;
+    margin-left: 55%;
+    margin-top: 4%;
+    margin-right: 4%;
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+    margin-bottom: 0;
+    color: white;
+ 
+}
+.hero .hero-text{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.hero .container .hero-content .port{
+padding-top: 30%;
+padding-left: 10%;
+}
+
+/* INTRO section  */
+/* Ensure the section is properly formatted */
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  border-bottom: #00BFA6 5px solid;
+}
+/*Container to hold both content and video */
+.intro .container1 {
+  display: flex;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Left column - Intro content */
+.intro .container1 .intro-content1 {
+    flex: 1; /* Takes equal space */
+    max-width: 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  /* Right column - Video */
+.intro .container1 .intro-video {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro .container1 .intro-video .side-video{
+    width: 100%;
+    height: 100%;
+    max-width: 500px; /* Limits video size */
+    border-radius: 10px; /* Adds rounded corners for style */
+
+  }  
+
+/*Bio section*/
+.bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #333333;
+    color: white;
+   border-bottom: #00BFA6 5px solid;
+  }
+  /*Container to hold both photo and content */
+.bio .container2 {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Left column - photo */
+.bio .container2 .bio-pic{
+    flex: 1;/* Takes 1 out of 4 space */
+    max-width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no overflow issues */
+    
+}
+/* Image Styling */
+.bio .container2 .bio-pic img {
+    max-width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    object-fit: cover; /* Crops the image to cover the entire space */
+    display: block; /* Removes extra spacing */
+    
+   
+}
+/* Right column - bio content */
+.bio .container2 .bio-content{
+    flex: 3; /* Takes 3 out of 4 space */
+    max-width: 50%;
+    padding: 20px;
+    text-align: left; 
+    flex-direction: column; 
+}
+/* Inner Layout for h3 and p (Two Columns within bio-content) */
+.bio-content .bio-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    border-top: 1px solid white; /* Adjust color & thickness */
+    padding-top: 10px; /* Creates spacing between the line and content */
+    padding-bottom: 10px;
+}
+/* Left Side - h4 */
+.bio-content .bio-text-container h4 {
+    flex: 1; /* Takes 1 out of 2 space */
+    max-width: 25%;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding-right: 50px;
+}
+/* Right Side - p */
+.bio-content .bio-text-container p {
+    flex: 3; /* Takes 3 out of 4 space */
+    max-width: 75%;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: justify; /* Makes it look cleaner */
+   
+}
+
+/*Education sector*/
+.edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color:white ;
+    border-bottom: #00BFA6 5px solid;
+  }
+  /*Container to hold both  content */
+.edu .container3 {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+.edu .container3 h1,h4{
+    color: black;
+}
+.edu .container3 p{
+    color: #4F4F4F;
+}
+  /* Left column - edu-content 1*/
+  .edu .container3 .edu-content1 {
+      flex: 1; /* Takes equal space */
+      max-width: 50%;
+      padding: 20px;
+      text-align: left;
+    }
+/* Right column - edu content */
+.edu .container3 .edu-content2 {
+    flex: 3; /* Takes 3 out of 4 space */
+    max-width: 50%;
+    padding: 20px;
+    text-align: left; 
+    flex-direction: column; 
+}
+.edu .container3 .edu-content2 .edu-text-container{
+    border-bottom:1px solid black ;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*Work section*/
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #1A1A1A; /* Adjust background color if needed */
+    color: white;
+    text-align: center;
+    border-bottom: #00BFA6 5px solid;
+}
+/* Container */
+.container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Adjust width as needed */
+}
+/* Center the Heading */
+.work-heading p {
+    margin-bottom: 30px; /* Space between heading and videos */
+}
+
+/* Stack Videos in 3 Rows */
+.work-content {
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center;
+    gap: 20px; /* Space between videos */
+    width: 100%;
+    
+}
+
+/* Video Styling */
+.work-video {
+    width: 100%; /* Make videos responsive */
+    max-width: 600px; /* Adjust maximum size */
+    border-radius: 10px;
+
+}
+.vid{
+    padding: 20px;
+    
+}
+.vid p{
+    text-align: left;
+}
+.video-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.work-video {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 10px; /* Puts progress bar inside the video */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Hidden by default */
+}
+/* Show progress bar when hovering or when the video is playing */
+.video-container:hover .progress-bar,
+.work-video:playing + .progress-bar {
+    opacity: 1;
+}
+
+/*Charges Section*/
+.charges {
+    background-color: white;
+    color: #A0A0A0;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: #00BFA6 5px solid;
+}
+.container6{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* chargesHeading */
+.charges-heading h3 {
+    margin-bottom: 30px;
+    color: black;
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.charges-content{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items:center;
+    text-align:center;  
+    height: 100%;
+    
+   
+}
+.chargesT{
+    border: 1px solid #eee;
+    margin: 20;
+    padding: 20;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; 
+     
+}
+.table-header{
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+.pro{
+    background-color: #00BFA6;
+}
+.table-charges li{
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+.entry{
+    color:black;
+}
+.entry-1{
+  background-color: #eee;
+  font-size: 20px;
+  color:black;
+}
+.table-charges:hover{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.button{
+  background-color: #00BFA6;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.button:hover{
+    background-color:black;
+}
+
+
+
+/*Testimonials section*/
+.testimonials {
+    background-color: #333333;
+    color: #A0A0A0;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: #00BFA6 5px solid;
+}
+
+/* Container */
+.container5 {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Testimonial Heading */
+.testimonial-heading h1 {
+    margin-bottom: 30px;
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Testimonial Content (flex container for two columns) */
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Testimonial Item Styling */
+.test {
+    display: flex; /* Use flexbox to align image and text side by side */
+    flex: 0 0 48%; /* Each testimonial takes up 48% of the width of the container */
+    margin-bottom: 30px; /* Space between rows */
+    text-align: left;
+    align-items: flex-start; /* Align image and text to the top */
+}
+
+/* Image Styling */
+.test img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    filter: grayscale(100%);
+}
+/* footer */
+.footer{
+    padding: 40px 0;
+    background-color:black;
+   
+}
+.footer h4{
+    margin-bottom: 10px;
+    
+}
+.footer ul li{
+    line-height: 2.5;
+}
+.footer a{
+    color: #ccc;
+}
+.footer i{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+ .ft{
+    color:white;
+}
+.footer .card{
+    margin: 20px 30px 30px 0;
+    border:2px solid white;
+    background-color:white;
+    border-radius:10px;
+    padding:20px;
+}
+.footer input[type='email']{
+    width: 100%;
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.fbutton{
+    background-color: #00BFA6;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+   margin-left:120px;
+   margin-right:50px;
+}
+/* Text classes */
+.text-xxl{
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0px 20px;
+    
+    
+}
+.text-xl{
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 10px 0px 20px;
+    
+}
+.text-lg{
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0px 20px;
+    
+}
+.text-md{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    
+   
+}
+.text-sm{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px  0px 5px;
+  
+}
+
+.text-center{
+    text-align:center
+}
+@media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
