@@ -1,9 +1,9 @@
-# Mercy Muturi's Portfolio Website 🌐✨
+# Mercy Muturi's Portfolio Website 
 
 Welcome to my personal portfolio website!  
 This site showcases who I am, my background in software development, projects I’ve built, testimonials from past collaborations, and my current offerings.
 
-## 🔍 Overview
+##  Overview
 
 This responsive portfolio is built with **HTML**, **CSS**, and **JavaScript** to highlight:
 - My bio and journey in tech 
@@ -15,7 +15,7 @@ This responsive portfolio is built with **HTML**, **CSS**, and **JavaScript** to
 
 The website aims to give visitors a glimpse into my skills, style, and personality as a passionate software developer from Nairobi, Kenya.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - HTML5
 - CSS3
 - JavaScript
